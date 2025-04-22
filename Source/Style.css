@@ -26,7 +26,6 @@
 
 #main{
     grid-area: main;
-    display: block;
     width: 1180px;
     height: 7358.905px;
     position: relative;
@@ -35,8 +34,9 @@
 
 #footer{
     grid-area: footer;
-    display: block;
+    width: 100%;
     position: relative;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.5);
 }
 /* Header */
 
@@ -171,7 +171,7 @@
     position: relative;
     align-items: center;
     border-radius: 10px;
-    margin: 0px 10px 0px 0px;
+    margin: 0px 20px 0px 0px;
     cursor: pointer;
 }
 
@@ -186,6 +186,7 @@
     color: #4a5565;
     background-color: #FFFFFF;
     cursor: pointer;
+    
 }
 
 #header__bottom__search i{
@@ -6619,4 +6620,139 @@
     position: absolute;
     right: 0px;
     bottom: 0px;
+}
+
+
+/* Footer - Top */
+
+#footer__top{
+    width: 100%;
+    height: 469.225px;
+}
+
+#footer__top__container{
+    display: flex;
+    width: 1200px;
+    height: inherit;
+    margin: 0px 121.400px 0px 121.400px;
+}
+
+#footer__top__container div{
+    flex: 1;
+}
+
+#footer__top__tongdaihotromienphi{
+
+}
+
+#footer__top__thongtinvachinhsach{
+    padding: 15px;
+    position: relative;
+}
+
+#footer__top__thongtinvachinhsach p{
+    font-size: 16px;
+    color: #363636;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+#footer__top__thongtinvachinhsach ul{
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+#footer__top__thongtinvachinhsach ul li{
+    margin-bottom: 10px;
+}
+
+#footer__top__thongtinvachinhsach a{
+    display: block;
+    text-decoration: none;
+    color: #4A4A4A;
+    font-size: 12px;
+}
+
+#footer__top__thongtinvachinhsach a:hover{
+    color: #D70018;
+}
+
+#footer__top__dichvuvathongtinkhac{
+    padding: 15px;
+    position: relative;
+}
+
+#footer__top__dichvuvathongtinkhac p{
+    font-size: 16px;
+    color: #363636;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+#footer__top__dichvuvathongtinkhac ul{
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+#footer__top__dichvuvathongtinkhac ul li{
+    margin-bottom: 10px;
+}
+
+#footer__top__dichvuvathongtinkhac a{
+    display: block;
+    text-decoration: none;
+    color: #4A4A4A;
+    font-size: 12px;
+}
+
+#footer__top__dichvuvathongtinkhac a:hover{
+    color: #D70018;
+}
+
+.footer__top__dichvuvathongtinkhac__image{
+    display: flex;
+    width: 272px;
+    height: 115.588px;
+}
+
+.footer__top__dichvuvathongtinkhac__image > img{
+    width: 108.8px;
+    height: 115.588px;
+}
+
+.footer__top__dichvuvathongtinkhac__image > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4px;
+}
+
+.footer__top__dichvuvathongtinkhac__image > div > *:first-child{
+    width: 141.6px;
+    height: 41.76px;
+}
+
+.footer__top__dichvuvathongtinkhac__image > div > *:last-child{
+    width: 141.6px;
+    height: 47.43px;
+}
+
+.footer__top__dichvuvathongtinkhac__image > div > a{
+    width: 141.6px;
+}
+
+.footer__top__dichvuvathongtinkhac__image > div > a > img{
+    width: 141.6px;
+    height: auto;
+}
+
+#footer__top__ketnoivoicellphones{
+
+}
+/* Footer - Bottom */
+
+#footer__bottom{
+    width: 100%;
+    height: 147px;
+    background-color: #F8F8F8;
 }
