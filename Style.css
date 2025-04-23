@@ -6913,13 +6913,14 @@
     height: 125px;
 }
 
-/* Main - Fifth */
+/* Main - Fifth  */
 #main__fifth a{
     color: rgb(68, 68, 68);
     text-decoration: none;
 }
 
-#main__fifth h2, p{
+#main__fifth:first-child  h2, 
+#main__fifth:first-child p{
     display: inline-block;
     font-size: 22px;
 }
@@ -6940,7 +6941,8 @@
     height: inherit;
 }
 
-#main__fifth__tincongnghe__title > a > h2, p{
+#main__fifth__tincongnghe__title > a > h2,
+#main__fifth__tincongnghe__title > a > p{
     display: flex;
     align-items: center;
     width: auto;
