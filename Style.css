@@ -5,10 +5,11 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 /* Xử lý Grid */
 #layout{
     display: grid;
-    grid-template-rows: 104px 7358.905px 616.225px; 
+    grid-template-rows: 104px auto 616.225px; 
     grid-template-areas:
     "header header"
     "main main"
@@ -27,7 +28,7 @@
 #main{
     grid-area: main;
     width: 1180px;
-    height: 7358.905px;
+    height: inherit;
     position: relative;
     margin: 0px 136.400px 0px 136.400px;
 }
@@ -36,6 +37,7 @@
     grid-area: footer;
     width: 100%;
     position: relative;
+    margin-top: 42px;
     box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.5);
 }
 /* Header */
@@ -370,23 +372,24 @@
     border-radius: 15px;
     box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
 }
-/* Main - Second (Xử lý Grid)*/
+/* Main - Second */
+
 #main__second{
-    display: grid;
-    grid-template-rows: repeat(8, auto);
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: inherit;
     height: auto;
 }
 
-/* Main - Second */
+/* Main - Second (Điện thoại nổi bật nhất) */
 #main__second__dienthoainoibatnhat{
     display: flex;
     width: inherit;
     height: 40px;
     font-size: 13px;
     position: relative;
-    margin-bottom: 12px;
+    margin-bottom: 2px;
 }
 
 #main__second__dienthoainoibatnhat h2{
@@ -1589,7 +1592,7 @@
     bottom: 0px;
 }
 
-/* Main - Third */
+/* Main - Second (Laptop) */
 #main__second__laptop{
     display: flex;
     width: inherit;
@@ -2800,7 +2803,7 @@
     bottom: 0px;
 }
 
-/* Main - Fourth */
+/* Main - Second (Màn hình máy tính để bàn) */
 
 #main__second__manhinhmaytinhdeban{
     display: flex;
@@ -4074,7 +4077,7 @@
     bottom: 0px;
 }
 
-/* Main Second (Âm thanh) */
+/* Main - Second (Âm thanh) */
 
 #main__second__amthanh{
     display: flex;
@@ -4711,7 +4714,7 @@
     bottom: 0px;
 }
 
-/* Main Second (Đồng hồ thông minh) */
+/* Main - Second (Đồng hồ thông minh) */
 
 #main__second__donghothongminh{
     display: flex;
@@ -5348,7 +5351,7 @@
     bottom: 0px;
 }
 
-/* Main Second (Đồ gia dụng) */
+/* Main - Second (Đồ gia dụng) */
 
 #main__second__dogiadung{
     display: flex;
@@ -5985,7 +5988,7 @@
     bottom: 0px;
 }
 
-/* Main Second (TIVI) */
+/* Main - Second (TIVI) */
 
 #main__second__tivi{
     display: flex;
@@ -6622,9 +6625,372 @@
     bottom: 0px;
 }
 
+/* Main - Third */
+#main__third{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: inherit;
+    height: auto;
+    margin-top: 35px;
+}
+
+/* Main - Third (Phụ kiện) */
+#main__third__phukien__title{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#main__third__phukien__title a{
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    font-size: 22px;
+}
+
+#main__third__phukien__title > a{
+    position: absolute;
+    right: 0;
+    font-size: 13px;
+}
+
+#main__third__phukien__title h2{
+    display: inline-block;
+    font-weight: 600;
+    color: #444444;
+    cursor: pointer;
+}
+
+#main__third__phukien__list{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+#main__third__phukien__list a{
+    width: 118px;
+    height: 125px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #F28376;
+    box-shadow: rgba(60, 64, 67, 0.1) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#main__third__phukien__list p{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+
+#main__third__phukien__list img{
+    width: 118px; 
+    height: 125px; 
+}
+
+/* Main - Third (Linh kiện máy tính) */
+#main__third__linhkienmaytinh__title{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#main__third__linhkienmaytinh__title a{
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    font-size: 22px;
+}
+
+#main__third__linhkienmaytinh__title > a{
+    position: absolute;
+    right: 0;
+    font-size: 13px;
+}
+
+#main__third__linhkienmaytinh__title h2{
+    display: inline-block;
+    font-weight: 600;
+    color: #444444;
+    cursor: pointer;
+}
+
+#main__third__linhkienmaytinh__list{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+#main__third__linhkienmaytinh__list a{
+    width: 118px;
+    height: 125px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: rgba(60, 64, 67, 0.1) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#main__third__linhkienmaytinh__list > *:first-child img{
+    width: 80%; 
+    height: 80%; 
+    object-fit: contain; 
+    margin: 25px 0px 0px 13px;
+}
+
+#main__third__linhkienmaytinh__list p{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+
+#main__third__linhkienmaytinh__list img{
+    width: 118px; 
+    height: 125px; 
+}
+
+/* Main - Third (Hàng cũ) */
+#main__third__hangcu__title{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#main__third__hangcu__title a{
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    font-size: 22px;
+}
+
+#main__third__hangcu__title > a{
+    position: absolute;
+    right: 0;
+    font-size: 13px;
+}
+
+#main__third__hangcu__title h2{
+    display: inline-block;
+    font-weight: 600;
+    color: #444444;
+    cursor: pointer;
+}
+
+#main__third__hangcu__list{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+#main__third__hangcu__list a{
+    width: 118px;
+    height: 125px;
+    background-color: rgb(214, 64, 68);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: rgba(60, 64, 67, 0.1) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#main__third__hangcu__list p{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+
+#main__third__hangcu__list img{
+    width: 118px; 
+    height: 125px; 
+}
+
+/* Main - Fourth (Ưu đãi sinh viên) */
+#main__fourth__uudaisinhvien{
+    width: inherit;
+    height: auto;
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+#main__fourth__uudaisinhvien > a{
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+#main__fourth__uudaisinhvien > div a{
+    display: inline-block;
+    width: 287.5px;
+    height: 125px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 4px;
+    box-shadow: rgba(60, 64, 67, 0.1) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px;
+    text-decoration: none;
+}
+
+#main__fourth__uudaisinhvien img{
+    width: 287.5px;
+    height: 125px;
+}
+
+/* Main - Fourth (Ưu đãi thanh toán) */
+#main__fourth__uudaithanhtoan{
+    width: inherit;
+    height: auto;
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+#main__fourth__uudaithanhtoan > a{
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+#main__fourth__uudaithanhtoan > div a{
+    display: inline-block;
+    width: 287.5px;
+    height: 125px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 4px;
+    box-shadow: rgba(60, 64, 67, 0.1) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px;
+    text-decoration: none;
+}
+
+#main__fourth__uudaithanhtoan img{
+    width: 287.5px;
+    height: 125px;
+}
+
+/* Main - Fourth (Chuyên trang thương hiệu) */
+#main__fourth__chuyentrangthuonghieu{
+    width: inherit;
+    height: auto;
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+#main__fourth__chuyentrangthuonghieu > a{
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+#main__fourth__chuyentrangthuonghieu > div a{
+    display: inline-block;
+    width: 287.5px;
+    height: 125px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 4px;
+    box-shadow: rgba(60, 64, 67, 0.1) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px;
+    text-decoration: none;
+}
+
+#main__fourth__chuyentrangthuonghieu img{
+    width: 287.5px;
+    height: 125px;
+}
+
+/* Main - Fifth */
+#main__fifth a{
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+}
+
+#main__fifth h2, p{
+    display: inline-block;
+    font-size: 22px;
+}
+
+#main__fifth p{
+    position: absolute;
+    font-size: 13px;
+    right: 0;
+}
+
+#main__fifth__tincongnghe__title{
+    display: flex; 
+    height: 33px;
+}
+
+#main__fifth__tincongnghe__title a{
+    width: auto;
+    height: inherit;
+}
+
+#main__fifth__tincongnghe__title > a > h2, p{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: inherit;
+}
+
+#main__fifth__tincongnghe__list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 227.13px;
+}
+
+#main__fifth__tincongnghe__list div{
+    width: 283.75px;
+    height: inherit;
+    border-radius: 15px 15px 15px 15px;
+    border: 1.6px solid rgb(222,222,222);
+    padding: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+#main__fifth__tincongnghe__list a{
+    display: block;
+    width: 273.75px;
+    height: 153px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#main__fifth__tincongnghe__list img{
+    width: 273px;
+    height: 153px;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+}
+
+#main__fifth__tincongnghe__list p{
+    width: 280.55px;
+    height: 48px;
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+    font-weight: 600;
+    line-height: 24px;
+    padding: 0px 8px 0px 8px;
+    cursor: pointer;
+}
+
 
 /* Footer - Top */
-
 #footer__top{
     width: 100%;
     height: 469.225px;
@@ -6749,10 +7115,63 @@
 #footer__top__ketnoivoicellphones{
 
 }
-/* Footer - Bottom */
 
+/* Footer - Bottom */
 #footer__bottom{
     width: 100%;
     height: 147px;
     background-color: #F8F8F8;
+    position: relative;
 }
+
+#footer__bottom__more {
+    display: flex;
+}
+
+#footer__bottom__more a{
+    display: inline-flex;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+}
+
+#footer__bottom__more p{
+    display: inline-block;
+    color: #707070;
+    font-size: 10px;
+}
+
+#footer__bottom__more > div{
+    display: inline-block;
+    flex: 1;
+    padding: 12px;
+}
+
+#footer__bottom__more > div > div{
+    text-align: center;
+}
+
+#footer__bottom__container{
+    position: relative;
+    margin: 0px 121.400px 0px 121.400px;
+}
+
+#footer__bottom__container > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 25px;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#footer__bottom__chungchi div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
