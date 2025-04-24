@@ -6830,6 +6830,7 @@
 }
 
 #main__fourth__uudaisinhvien > a{
+    display: block;
     color: rgb(68, 68, 68);
     text-decoration: none;
     margin-bottom: 10px;
@@ -6861,6 +6862,7 @@
 }
 
 #main__fourth__uudaithanhtoan > a{
+    display: block;
     color: rgb(68, 68, 68);
     text-decoration: none;
     margin-bottom: 10px;
@@ -6892,6 +6894,7 @@
 }
 
 #main__fourth__chuyentrangthuonghieu > a{
+    display: block;
     color: rgb(68, 68, 68);
     text-decoration: none;
     margin-bottom: 10px;
@@ -6919,7 +6922,7 @@
     text-decoration: none;
 }
 
-#main__fifth:first-child  h2, 
+#main__fifth:first-child h2
 #main__fifth:first-child p{
     display: inline-block;
     font-size: 22px;
@@ -7005,7 +7008,7 @@
     margin: 0px 121.400px 0px 121.400px;
 }
 
-#footer__top__container div{
+#footer__top__container section{
     flex: 1;
 }
 
@@ -7052,7 +7055,7 @@
 
 #footer__top__dichvuvathongtinkhac p{
     font-size: 16px;
-    color: #363636;
+    color: rgb(54, 54, 54);
     font-weight: 500;
     margin-bottom: 12px;
 }
@@ -7115,7 +7118,54 @@
 }
 
 #footer__top__ketnoivoicellphones{
+    padding: 15px;
+    color: rgb(74, 74, 74);
+}
 
+#footer__top__ketnoivoicellphones > *:first-child{
+    font-weight: 500;
+    color: rgb(54, 54, 54);
+}
+
+#footer__top__ketnoivoicellphones__container {
+    margin-bottom: 12px;
+}
+
+#footer__top__ketnoivoicellphones__container p{
+    margin-bottom: 12px;
+}
+
+#footer__top__ketnoivoicellphones__container div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+#footer__top__ketnoivoicellphones:first-child a{
+    display: block;
+    width: 34px;
+    height: 32px;
+}
+
+#footer__top__ketnoivoicellphones__container img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+#footer__top__ketnoivoicellphones__websitethanhvien{
+    font-size: 12px;
+    color: rgb(74, 74, 74);
+}
+
+#footer__top__ketnoivoicellphones__websitethanhvien p{
+    margin-bottom: 5px;
+}
+#footer__top__ketnoivoicellphones__websitethanhvien a{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-bottom: 5px;
 }
 
 /* Footer - Bottom */
